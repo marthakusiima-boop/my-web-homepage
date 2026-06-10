@@ -1,41 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Home Page</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kusiima's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- HEADER SECTION -->
- <header>
- <nav>
- <ul class="nav-links">
- <li><a href="#about">About</a></li>
- <li><a href="#skills">Skills</a></li>
- <li><a href="#projects">Projects</a></li>
- <li><a href="#contact">Contact</a></li>
- </ul>
- </nav>
- </header>
- <!-- HERO / MAIN BANNER -->
- <section class="hero">
- <h1>Welcome to My Home Page</h1>
- <p>I am a Data Science Student learning Web Development</p>
- <a href="#about" class="btn">Learn More About Me</a>
- </section>
- <!-- ABOUT SECTION -->
- <section id="about" class="section">
- <h2>About Me</h2>
- <p>Hello! My name is <strong>Kusiima Martha Mwine</strong>. I am a first-year
-student
- at the School of Computing and Technology. I am passionate about
-technology,
- problem solving, and building useful digital solutions.</p>
- </section>
- <!-- FOOTER -->
- <footer>
- <p>&copy; 2025 [Your Name] | School of Computing & Technology</p>
- </footer>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Kusiima's Home Page</h1>
+            <p>I am a Data Science Student learning Web Development</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="about" class="card section">
+            <h2>About Me</h2>
+            <p>Hello! My name is <strong>Kusiima Martha Mwine</strong>. I am a first-year student at the School of Computing and Technology, Uganda Christian University. I am passionate about trends in technology, problem-solving, data analysisand building elegant digital solutions. Welcome to my space on the web!</p>
+        </section>
+
+        <section id="skills" class="card section">
+            <h2>Technical Skills</h2>
+            <p>Here are some of the technical skills and methodologies I am currently developing:</p>
+            <ul class="skills-list">
+                <li>Basic HTML5 Structure</li>
+                <li>Web Page Styling</li>
+                <li>Responsive Design Basics</li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="projects" class="card section">
+            <h2>Academic Projects</h2>
+            <p>A quick glance at what I've been working on recently during my practical sessions:</p>
+            <div class="table-responsive">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Description</th>
+                            <th>Tech Stack</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Personal Portfolio</strong></td>
+                            <td>A clean, fully responsive web homepage highlighting my academic profile.</td>
+                            <td><span class="badge badge-html">HTML</span> <span class="badge badge-css">CSS</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Git Practice Repo</strong></td>
+                            <td>A remote version-controlled codebase focused on feature branch merging workflows.</td>
+                            <td><span class="badge badge-git">Git / GitHub</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="contact" class="card section">
+            <h2>Get In Touch</h2>
+            <p>Have a question or want to collaborate? Drop me a message below!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="Martha Kusiima Mwine">Your Name</label>
+                    <input type="text" id="Martha Kusiima Mwine" name="name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="marthakusiima@gmail.com">Email Address</label>
+                    <input type="email" id="marthakusiima@gmail.com" name="email" placeholder="john@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write something..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kusiima | School of Computing & Technology</p>
+    </footer>
+
 </body>
 </html>
