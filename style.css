@@ -271,4 +271,8 @@ footer {
     .hero h1 { font-size: 32px; }
     .card { padding: 25px; }
     .submit-btn { width: 100%; }
+    .skills-list {
+        list-style-type: none !important;
+        padding-left: 0;
+    }
 }
